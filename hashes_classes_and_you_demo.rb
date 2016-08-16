@@ -20,7 +20,9 @@ jamie = { jamie: { last_name: "Pilgrim",
 #puts jamie[:jamie][:pets][0][:name]
 
 #How do I find the name's of Jamie's pets?
-
+    jamie[:jamie][:pets].each do |pet|
+      puts pet[:name]
+    end
 
 
 ### Let's setup an Address class
